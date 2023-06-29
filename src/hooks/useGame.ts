@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 export const useGame = () => {
   const [turnColor, setTurnColor] = useState(1);
   const [board, setBoard] = useState([
@@ -66,4 +68,5 @@ export const useGame = () => {
     } //y=-x+3
     setBoard(newBoard);
   };
+  return { board };
 };
