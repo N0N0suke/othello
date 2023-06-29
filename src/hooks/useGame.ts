@@ -68,5 +68,5 @@ export const useGame = () => {
     } //y=-x+3
     setBoard(newBoard);
   };
-  return { board };
+  return { board, onClick };
 };

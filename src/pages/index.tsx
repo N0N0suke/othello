@@ -3,7 +3,7 @@ import { useGame } from '../hooks/useGame';
 import styles from './index.module.css';
 
 const Home = () => {
-  const { board } = useGame();
+  const { board, onClick } = useGame();
 
   return (
     <div className={styles.container}>
